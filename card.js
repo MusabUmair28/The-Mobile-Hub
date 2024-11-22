@@ -14,7 +14,7 @@ function render() {
     output.innerHTML += `
       <div class="cart-box">
         <div class="cart-box-image">
-          <img src="${item.image}" />
+          <img src="{https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-13-Pro_iPhone-13-Pro-Max_09142021_inline.jpg.large_2x.jpg}" />
         </div>
         <div class="cart-box-content">
           <h1>${item.brand} ${item.model}</h1>
@@ -26,7 +26,8 @@ function render() {
             <button onclick="increaseItems(${index}, ${item.price})">+</button>
           </div>
           <h4 id="price-${index}">Price $${item.price * item.quantity}</h4>
-          <button class="buy-now" onclick="buynow()">Buy Now</button>
+                  <a href="https://www.apple.com/by/iphone-13/"><button>Buy Now</button></a>
+
            <button class="delete" onclick="deleteItems(${index})">Delete Items</button>
         </div>
        

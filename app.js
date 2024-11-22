@@ -158,10 +158,7 @@ const phones = [{
 
 
 
-const Output = document.querySelector(".ol"); // Ensure this element exists in the HTML
-let cardItems = []; // Make sure 'cardItems' is defined
-
-// Retrieve data from localStorage and parse it
+const Output = document.querySelector(".ol")
 const checkDataFromLocalStorage = JSON.parse(localStorage.getItem("cart"));
 if (checkDataFromLocalStorage !== null) {
   cardItems = [...checkDataFromLocalStorage];
